@@ -310,6 +310,23 @@ section{
     color: #474343;
 }
 
+.project_btn{
+    text-align: center;
+    margin: 1rem;
+}
+.project_btn button{
+    background-color: #57c225;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.project_btn button:hover {
+    background-color: #4CAF50;
+}
 /* Clients Section */
 #clients {
     background-color: #f1f1f1;
