@@ -5,143 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreelanceCodingTrades</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
-    <body>
-        
-        <!-- NavBar section -->
-        <nav class="navbar">
+<body>
+    <!-- NavBar section -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <h1 class="logo" id="navbar_logo">FreelanceCodingTrades</h1>
             <div class="mobile_menu">☰</div>
-            <!-- Contains Navigation bar -->
-            <div class="navbar_container"> 
-                <h1 class="logo" id="navbar_logo">FreelanceCodingTrades</h1>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="home" class="navbar_links" id="home-page">Home</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="about" class="navbar_links" id="about-page">About</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="projects" class="navbar_links" id="projects-page">Projects</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="services" class="navbar_links" id="services-page">Services</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero_container">
-                <h1 class="hero_heading">
-                    Automated<span> Trading Solutions</span>
-                </h1>
-                <p class="hero_description">
-                    Custom Trading Scripts for Pinescript and NinjaTrader
-                </p>
-                <button class="main_btn"><a href="#">Explore</a></button>
-            </div>
-        </section>
-        <!-- About Section -->
-        <section class="main" id="about">
-            <div class="main_container">
-                <div class="main_img--container">
-                    <div class="main_img--card"></div>
-                </div>
-                <div class="main_content">
-                    <h1>Trading Scripts Made Simple</h1>
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="#home" class="navbar_links" id="home-page">Home</a></li>
+                <li class="navbar_item"><a href="#about" class="navbar_links" id="about-page">About</a></li>
+                <li class="navbar_item"><a href="#projects" class="navbar_links" id="projects-page">Projects</a></li>
+                <li class="navbar_item"><a href="#services" class="navbar_links" id="services-page">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero_container">
+            <h1 class="hero_heading">Automated <span>Trading Solutions</span></h1>
+            <p class="hero_description">Custom Trading Scripts for Pinescript and NinjaTrader</p>
+            <button class="main_btn"><a href="#services">Explore</a></button>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="main" id="about">
+        <div class="main_container">
+            <!-- <div class="main_img--container">
+                <div class="main_img--card"></div>
+            </div> -->
+            <div class="main_content">
+                <h1>Trading Scripts Made Simple</h1>
                 <h2>For Pinescript and NinjaTrader Users</h2>
                 <p>At FreelanceTradingCodes, we specialize in developing custom trading algorithms and indicators that give you the edge in today's competitive markets. Our team of expert developers creates efficient, reliable scripts tailored to your specific trading strategies.</p>
                 <p>Whether you're looking to automate your trading process, develop custom indicators, or implement complex trading strategies, we have the expertise to bring your vision to life.</p>
-                </div>
             </div>
-        </section>
-        <!-- Services -->
-        <section class="main" id="services">
-            <h1>Our Services</h1>
-            <!-- Contains services cards -->
-            <div class="services_wrapper">
-                <div class="services_card">
-                    <h2>Pinescript Coding</h2>
-                        <p>Custom indicators and strategies for TradingView's Pinescript platform. Our scripts are optimized for performance and reliability, giving you the tools you need to make informed trading decisions.</p>
-                        <p>We specialize in creating:</p>
-                        <ul style="text-align: left; margin-bottom: 30px;">
-                            <li>Custom indicators with alerts</li>
-                            <li>Automated trading strategies</li>
-                            <li>Strategy development</li>
-                            <li>Script optimization</li>
-                        </ul>
-                    <div class="services_btn"><button>Get Started</button></div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="main" id="services">
+        <h1>Our Services</h1>
+        <div class="services_wrapper">
+            <div class="services_card">
+                <h2>Pinescript Coding</h2>
+                <p>Custom indicators and strategies for TradingView's Pinescript platform. Our scripts are optimized for performance and reliability, giving you the tools you need to make informed trading decisions.</p>
+                <p>We specialize in creating:</p>
+                <ul>
+                    <li>Custom indicators with alerts</li>
+                    <li>Automated trading strategies</li>
+                    <li>Strategy development</li>
+                    <li>Script optimization</li>
+                </ul>
+                <!-- <div class="services_btn"><button>Get Started</button></div> -->
+            </div>
+            <div class="services_card">
+                <h2>NinjaTrader Development</h2>
+                <p>Professional NinjaTrader indicators and automated systems using NinjaScript. We create high-performance solutions that integrate seamlessly with your NinjaTrader platform.</p>
+                <p>Our NinjaTrader services include:</p>
+                <ul>
+                    <li>Custom indicators</li>
+                    <li>Automated trading systems</li>
+                    <li>Strategy development</li>
+                    <li>Performance optimization</li>
+                </ul>
+                <!-- <div class="services_btn"><button>Get Started</button></div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="portfolio-section">
+        <div class="project_container">
+            <div class="text-center">
+                <h2 class="gradient-heading">Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-project="ai-dashboard">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Custom candle trend + Fibonacci</h3>
+                            <p>A TradingView script that analyzes candle trends and applies Fibonacci levels to recent swing highs and lows to identify potential support and resistance zones for trade entries and exits.</p>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project-1.jpeg" alt="Project 1">
+                    </div>
                 </div>
 
-                <div class="services_card">
-                    <h2>NinjaTrader Development</h2>
-                        <p>Professional NinjaTrader indicators and automated systems using NinjaScript. We create high-performance solutions that integrate seamlessly with your NinjaTrader platform.</p>
-                        <p>Our NinjaTrader services include:</p>
-                            <ul style="text-align: left; margin-bottom: 30px;">
-                                <li>Custom indicators</li>
-                                <li>Automated trading systems</li>
-                                <li>Strategy development</li>
-                                <li>Performance optimization</li>
-                            </ul>
-                    <div class="services_btn"><button>Get Started</button></div>
-                </div>
-            </div>
-        </section>
-        <!-- Projects -->
-        <section class="main" id="projects">
-            <h1>Our Projects</h1>
-            <div class="projects_wrapper">
-                <div class="project_card">
-                    <h2>Project 1</h2>
-                        <p>A sophisticated trading system based on multiple moving average crossovers with built-in volatility filters. This system generated a 42% improvement in win rate compared to traditional MA crossover systems.</p>
-                        <p>Features include dynamic timeframe adaptation, custom alert conditions, and comprehensive backtesting capabilities.</p>
+                <!-- Project Card 2 -->
+                <div class="project-card" data-project="crypto-platform">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Make a screener based on the logics</h3>
+                            <p>A custom Pine Script screener that uses client-defined candle logic to monitor 5 pairs across 8 timeframes (40 securities total), helping traders quickly analyze multiple assets and make informed decisions.</p>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project-2.jpeg" alt="Project 2">
+                    </div>
                 </div>
 
-                <div class="project_card">
-                    <h2>Project 2</h2>
-                        <p>Custom-built volume profile indicator for NinjaTrader that identifies key support and resistance levels based on trading volume. Includes value area high/low calculations and point of control visualization.</p>
-                        <p>Used by professional day traders for precision entry and exit points in futures markets.</p>
+                <!-- Project Card 3 -->
+                <div class="project-card" data-project="smart-home">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Makine a custom screener of the strategy</h3>
+                            <p>A Pine Script screener for tracking multiple trading pairs simultaneously using custom indicators and conditions, helping traders save time and make quicker, informed decisions.</p>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project-3.jpeg" alt="Project 3">
+                    </div>
                 </div>
 
-                <div class="project_card">
-                    <h2>Project 3</h2>
-                        <p>An advanced RSI-based trading strategy that analyzes multiple timeframes simultaneously to confirm trend direction and strength. Incorporates dynamic overbought/oversold levels based on market volatility.</p>
-                        <p>Includes custom exit logic with trailing stop mechanisms for optimal profit capture.</p>
+                <!-- Project Card 4 -->
+                <div class="project-card" data-project="ar-navigation">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>5 indicator Combined Indicator with Alerts</h3>
+                            <p>A unified script that combines multiple indicators, including higher timeframe fractals with alerts, to simplify trading and save space. It features a table displaying RSI and normalized MACD values with color cues for easy analysis—all in one script.</p>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project-4.jpeg" alt="Project 4">
+                    </div>
                 </div>
             </div>
-            <div class="project_btn"><button>More Projects</button></div>
-        <section>
-        <!-- Clients Reviews Slider -->
-        <section class="main" id="clients">
-            <h1>Clients Reviews</h1>
-            <div class="client_wrapper">
-                <div class="client_card">
-                    <h3>Client 1</h3>
-                    <p>Client Review</p>
-                </div>
-                <div class="client_card">
-                    <h3>Client 2</h3>
-                    <p>Client Review</p>
-                </div>
-                <div class="client_card">
-                    <h3>Client 3</h3>
-                    <p>Client Review</p>
-                </div>
+        </div>
+    </section>
+    <!-- Clients Reviews Slider -->
+    <section class="main" id="clients">
+        <h1>Clients Reviews</h1>
+        <div class="client_wrapper">
+            <div class="client_card">
+                <h3>Client 1</h3>
+                <p>Client Review</p>
             </div>
-        </section>
-        <!-- Start Now Section -->
-        <section class="main" id="startnow">
-            <div class="photo-credit">Photo by Amjith S on Unsplash</div>
-            <h1>Ready to Elevate Your Trading?</h1>
-            <p>Let's discuss how our custom trading scripts can help you achieve your trading goals.</p>
-            <button class="main_btn"><a href="#contact">Contact Us</a></button>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer_container">
-                <div class="footer_container">
+            <div class="client_card">
+                <h3>Client 2</h3>
+                <p>Client Review</p>
+            </div>
+            <div class="client_card">
+                <h3>Client 3</h3>
+                <p>Client Review</p>
+            </div>
+        </div>
+    </section>
+    <!-- Start Now Section -->
+    <section class="main" id="startnow">
+        <h1>Ready to Elevate Your Trading?</h1>
+        <p>Let's discuss how our custom trading scripts can help you achieve your trading goals.</p>
+        <button class="main_btn"><a href="#contact">Contact Us</a></button>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_container">
             <div class="footer_column">
                 <h3>FreelanceTradingCodes</h3>
                 <p>Custom trading scripts for serious traders. We turn your trading ideas into efficient, reliable code.</p>
@@ -174,9 +200,8 @@
             </div>
         </div>
         <div class="footer_bottom">
-            <p>&copy; 2025 FreelanceTradingCodes. All rights reserved.</p>
+            <p>© 2025 FreelanceTradingCodes. All rights reserved.</p>
         </div>
-            </div>
-        </footer>
-    </body>
-</html> 
+    </footer>
+</body>
+</html>
